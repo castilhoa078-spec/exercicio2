@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+     <div>
+</div>
+ <h1>Cadastrar usuário</h1>
+ <form action="index.html" method="post">
+     <!-- Dados pessoais -->
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                      <p>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome">
+                      </p>
+                      <p>
+                        <label>Idade:</label>
+                        <input type="radio" id="abaixo_17" name="idade" value="abaixo_17">
+                        <label for="abaixo_17">Abaixo ou igual 17</label>
+                        
+                        <input type="radio" id="acima_17" name="idade" value="acima_17">
+                        <label for="acima_17">Acima 17</label>
+                      </p>
+                      </fieldset>
+<!-- Perfil -->
+                <fieldset>
+                    <legend>Perfil</legend>
+                <p>
+                  <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">   
+                </p>
+                
+                 <p>
+                     <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha">
+                 </p>
+
+                  <p>
+                     <label for="confirma_senha">Confirma senha:</label>
+                        <input type="password" id="confirma_senha" name="confirma_senha">
+                  </p>
+                  <p>
+                     <label for="perfil_trabalho">Perfil trabalho:</label>
+                        <select id="perfil_trabalho" name="perfil_trabalho">
+                            <option value="front_end">Front-End Developer</option>
+                            <option value="design">Design</option>
+                            <option value="analista">Analista</option>
+                        </select>
+                  </p>
+                  <p>
+                    <label>Interesses:</label>
+                        <input type="checkbox" id="programador" name="interesses" value="programador">
+                        <label for="programador">Programador</label>
+                  </p>
+                   <p>
+                     <label for="descricao">Descrição:</label>
+                        <textarea id="descricao" name="descricao"></textarea>
+                   </p>
+                   </fieldset>
+                    <button type="submit">Enviar dados</button>
+                                 
+ </form>
+</body>
+</html>
